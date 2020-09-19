@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* top grid */
+.top {
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: auto;
+    padding: 40px;
+    border-radius:10px 10px 0 0  ;
+}
+
+.top h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.top .p-1 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.top .p-2 {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    margin-top: 20px
+}
+
+/* bottom left */
+.bottom-left {
+    background-color: hsl(179, 62%, 43%);
+    height: auto;
+    padding: 40px;
+    color: #fff;
+    border-radius: 0 0 0 10px;
+}
+
+.bottom-left h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bottom-left p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.bottom-left .pbl-1 span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pbl-2 {
+    font-size: 16px;
+    margin-top: 5px !important;
+}
+
+.bottom-left button {
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #fff;
+    height: 30%;
+    width: 92%;
+    
+}
+
+
+/* bottom right */
+.bottom-right {
+    background-color: hsl(179, 52%, 50%);
+    height: auto;
+    padding: 40px;
+    color: #fff;
+    border-radius: 0 0 10px 0;
+}
+
+.bottom-right h1  {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bottom-right p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/* for mobile */
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .top {
+        grid-column-end: 2 ;
+        border-radius: 10px 10px 0 0;
+    }
+    .bottom-left {
+        border-radius: 0 ;
+    }
+    .bottom-left button {
+        height: 40px;
+    }
+    .bottom-right {
+        border-radius: 0 0 10px 10px;
+    }
+
+}
